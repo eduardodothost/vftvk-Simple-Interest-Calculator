@@ -6,7 +6,7 @@ function compute()
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100.00;
     var years = new Date().getFullYear()+parseInt(years);
-    if(principal >=0){
+    if(principal >0){
     /*Send the interest calculation to the result span */
     document.getElementById("result").innerHTML=
     "If you deposit "+"<mark>"+toUSD(principal)+",</mark><br>"+
@@ -16,7 +16,7 @@ function compute()
     "in the year "+"<mark>"+years +".</mark><br>";
     }
     else {
-        alert("Please enter a non-negative number.")
+        alert("Please enter a positive number.")
     }
    
     
