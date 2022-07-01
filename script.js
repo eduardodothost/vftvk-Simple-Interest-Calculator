@@ -13,7 +13,7 @@ function compute()
     "at an interest rate of "+"<mark>"+rate+"%"+"</mark>.<br>"+ 
     "You will recieve an amount of "+
     "<mark>"+toUSD(interest) +"</mark>,<br>"+
-    "in the year "+"<mark>"+years +"</mark><br>";
+    "in the year "+"<mark>"+years +".</mark><br>";
     }
     else {
         alert("Please enter a non-negative number.")
