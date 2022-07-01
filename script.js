@@ -8,12 +8,12 @@ function compute()
     var years = new Date().getFullYear()+parseInt(years);
     if(principal >=0){
     /*Send the interest calculation to the result span */
-    document.getElementById("result").innerText=
-    "If you deposit "+toUSD(principal)+
-    "\nat an interest rate of "+rate+"%"+ 
+    document.getElementById("result").innerHTML=
+    "If you deposit "+"<mark>"+toUSD(principal)+"</mark>"+
+    "\nat an interest rate of "+"<mark>"+rate+"%"+"</mark>"+ 
     "\nYou will recieve an amount of "+
-    toUSD(interest) +
-    ",\n in the year "+years;
+    "<mark>"+toUSD(interest) +"</mark>"+
+    ",\n in the year "+"<mark>"+years +"</mark>";
     }
     else {
         alert("Please enter a non-negative number.")
@@ -30,7 +30,7 @@ function updateRate() {
 
 function toUSD(money) {
     var value = new Intl.NumberFormat('en-US', 
-    { style: 'currency', currency: 'USD' } 
+    { style: 'currency', currency: 'USD'} 
   ).format(money);
         return value;
        
