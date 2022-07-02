@@ -10,7 +10,7 @@ function compute()
     if(principal >0){
     /*Send the interest calculation to the result span */
     document.getElementById("result").innerHTML=
-    "If you deposit "+"<mark>"+toUSD(principal)+",</mark><br>"+
+    "If you deposit "+"<mark>"+toUSD(principal)+"</mark>,<br>"+
     "at an interest rate of "+"<mark>"+rate+"%"+"</mark>.<br>"+ 
     "You will recieve an amount of "+
     "<mark>"+toUSD(interest) +"</mark>,<br>"+
